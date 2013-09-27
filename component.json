@@ -1,0 +1,12 @@
+{
+  "name": "modella-change-saved",
+  "repo": "modella/change-saved",
+  "description": "change saved event for modella",
+  "version": "0.1.0",
+  "keywords": [],
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}

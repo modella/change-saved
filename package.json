@@ -1,6 +1,6 @@
 {
   "name": "modella-change-saved",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Changed saved event for modella",
   "main": "index.js",
   "scripts": {

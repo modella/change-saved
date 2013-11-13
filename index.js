@@ -4,9 +4,9 @@ var ChangeSaved = module.exports = function(Model) {
     var dirty = instance.dirty;
     instance.once('save', function() {
       for(var key in dirty) {
-        instance.emit('changeSaved:'+key, instance[key]());
-        instance.model.emit('changeSaved:'+key, instance, instance[key]());
+        instance.emit(key + ' change saved', instance[key]());
+        instance.model.emit(key + ' change saved', instance, instance[key]());
       }
     });
   });
-}
+};

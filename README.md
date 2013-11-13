@@ -1,6 +1,6 @@
 # modella-change-saved
 
-Adds a `changeSaved:attr` for modella.
+Adds a `attr change saved` for modella.
 
 ## Usage Example
 
@@ -13,6 +13,6 @@ Adds a `changeSaved:attr` for modella.
     User.use(changeSavedEvent);
 
 
-    User.on('changeSaved:username', function(user, username) {
+    User.on('username change saved', function(user, username) {
       // Update some other records or do whatever else you want.
     });

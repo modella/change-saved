@@ -1,6 +1,6 @@
 var ChangeSaved = module.exports = function(Model) {
 
-  Model.on('saving', function(instance) {
+  Model.on('saving', function(instance, done) {
     var dirty = instance.dirty;
     instance.once('save', function() {
       for(var key in dirty) {
@@ -8,5 +8,6 @@ var ChangeSaved = module.exports = function(Model) {
         instance.model.emit(key + ' change saved', instance, instance[key]());
       }
     });
+    if(done) done();
   });
 };
